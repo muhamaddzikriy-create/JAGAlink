@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veridian - Konservasi Cerdas</title>
+    <style>
+        :root {
+            --sage: #9caf88;
+            --soft-cream: #f7f9f6;
+            --deep-forest: #4a5d4e;
+            --warm-grey: #6c757d;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--soft-cream);
+            color: var(--deep-forest);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--sage);
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 10%;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, #f7f9f6);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        /* Features Grid */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid #eef2ed;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--sage);
+        }
+
+        .card h3 {
+            color: var(--sage);
+            margin-top: 0;
+        }
+
+        .card p {
+            color: var(--warm-grey);
+            font-size: 0.95rem;
+        }
+
+        /* Call to Action */
+        .btn {
+            background-color: var(--sage);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--deep-forest);
+        }
+
+        /* Tips Section */
+        .tips-banner {
+            background-color: var(--deep-forest);
+            color: var(--soft-cream);
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: var(--warm-grey);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand">VERIDIAN</div>
+        <div style="font-size: 0.9rem; color: var(--warm-grey);">Status Bumi: 22°C (Stabil)</div>
+    </nav>
+
+    <section class="hero">
+        <h1>Masa Depan Hijau di Tangan Anda</h1>
+        <p>Aplikasi konservasi canggih dengan pendekatan yang tenang dan mudah digunakan.</p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>Monitor Karbon</h3>
+                <p>Hitung jejak karbon harian Anda secara otomatis dari tagihan listrik dan transportasi secara mudah.</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+
+            <div class="card">
+                <h3>Adopsi Pohon Digital</h3>
+                <p>Donasi untuk reboisasi dan pantau pertumbuhan pohon Anda melalui koordinat GPS langsung dari layar ponsel.</p>
+                <a href="#" class="btn">Adopsi Sekarang</a>
+            </div>
+
+            <div class="card">
+                <h3>Kalender Hijau</h3>
+                <p>Notifikasi sederhana kapan waktu terbaik menanam di area Anda berdasarkan data cuaca BMKG terintegrasi.</p>
+                <a href="#" class="btn">Buka Jadwal</a>
+            </div>
+        </div>
+
+        <div class="tips-banner">
+            <h2>🌱 Tips Cepat Menanam</h2>
+            <p>Tahukah Anda? Menanam satu pohon dewasa dapat menyerap hingga 22kg karbon per tahun. Gunakan teknik <strong>Mulsa</strong> (penutupan tanah dengan jerami) untuk menjaga kelembapan bibit yang baru ditanam.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Veridian Conservation Technology. Dirancang untuk keasrian alam.
+    </footer>
+
+</body>
+</html>
